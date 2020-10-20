@@ -12,16 +12,20 @@
         <div class="slides">
             <section>
                 <h2>
-                    Expert Groups Shared Tools
+                    Expert Group on Shared Tools
                 </h2>
+                <br />
+                <p>
+                    October 2020
+                </p>
                 <br />
                 <h2>
                     VTL-Insee
                 </h2>
                 <br />
                 <div>
-                    <p><i>Franck COTTON (franck.cotton@insee.fr)</i></p>
-                    <p><i>Nicolas LAVAL (nicolas.laval@insee.fr)</i></p>
+                    <p><i>Franck Cotton (franck.cotton@insee.fr)</i></p>
+                    <p><i>Nicolas Laval (nicolas.laval@insee.fr)</i></p>
                     <p>
                         <cite>
                             <a href="https://nicolaval.github.io/VTL-Insee/index.html">Slides</a>
@@ -37,7 +41,7 @@
                 </section>
                 <section>
                     <h2>
-                        The last ten years Insee strategy:
+                        Insee's strategy:
                     </h2>
                     <br />
                     <ul>
@@ -54,7 +58,7 @@
                 </section>
                 <section>
                     <h2>
-                        Work in progress
+                        As a result
                     </h2>
                     <br />
                     <ul>
@@ -62,7 +66,7 @@
                             Complete overhaul of our survey data acquisition system
                         </li>
                         <li>
-                            Working recently on the dissemination phase
+                            Work started recently on the dissemination phase
                         </li>
                     </ul>
                 </section>
@@ -71,72 +75,83 @@
                         Why VTL?
                     </h2>
                     <br />
-                    <div>
-                        After focusing on information models
-                    </div>
-                    <br />
-                    <div>
-                        Switching to process models and meta-information
-                    </div>
+                    <ul>
+                        <li>
+                            After focusing on information models
+                        </li>
+                        <li>
+                            Switching to process models and meta-information
+                        </li>
+						<li>
+                            Need to represent processes at the logical level
+                        </li>
+						<li>
+                            VTL strategic choice in the ESS
+                        </li>
+                    </ul>
                 </section>
-            </section>
-            <section>
-                <h2>
-                    Priorities (descending order)
-                </h2>
-                <br />
-                <ul>
-                    <li>
-                        Edit code
-                    </li>
-                    <li>
-                        Validation from simple to complex
-                    </li>
-                    <li>
-                        Transformations from simple to complex
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h1>
-                    Guidelines
-                </h1>
-                <br />
-                <br />
-                <ul>
-                    <li>
-                        Grammar-based
-                    </li>
-                    <li>
-                        Open-source
-                    </li>
-                    <li>
-                        Driven by use cases
-                    </li>
-                </ul>
             </section>
             <section>
                 <section>
                     <h1>
-                        Overview on tools
+                        Guidelines
                     </h1>
-                    <br />
+                </section>
+                <section>
+                    <h2>
+                        Priorities (descending order)
+                    </h2>
                     <br />
                     <ul>
                         <li>
-                            <a href="https://github.com/InseeFr/VTL-Tools">
-                                VTL Tools
-                            </a>: JavaScript editor and engine
+                            Edit code
                         </li>
                         <li>
-                            <a href="https://github.com/InseeFr/Trevas">
-                                Trevas
-                            </a>: Java engine
+                            Validation from simple to complex
                         </li>
                         <li>
-                            <a href="https://github.com/romaintailhurat/darkr">
-                                Darkr
-                            </a>: R package around Trevas
+                            Transformations from simple to complex
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>
+                        Development principles
+                    </h2>
+                    <br />
+                    <ul>
+                        <li>
+                            Grammar-based
+                        </li>
+                        <li>
+                            Open-source
+                        </li>
+                        <li>
+                            Driven by use cases
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>
+                        Tools
+                    </h1>
+                </section>
+                <section>
+                    <h2>
+                        Overview
+                    </h2>
+                    <br />
+                    <ul>
+                        <li>
+                            <a href="https://github.com/InseeFr/VTL-Tools">VTL Tools</a>: JavaScript editor and engine
+                        </li>
+                        <li>
+                            <a href="https://github.com/InseeFr/Trevas">Trevas</a>: Java engine
+                        </li>
+                        <li>
+                            <a href="https://github.com/romaintailhurat/darkr">Darkr</a>: R package around Trevas
                         </li>
                         <li>
                             Utility tools (tree visualizer...)
@@ -145,39 +160,35 @@
                 </section>
                 <section>
                     <h2>
-                        Focus on Trevas
+                        Focus on Trevas (1)
                     </h2>
                     <br />
                     <div>
-                        Inspired by 
-                        <a href="https://github.com/statisticsnorway/java-vtl">
-                            Java VTL
-                        </a> (SSB):
+                        Inspired by <a href="https://github.com/statisticsnorway/java-vtl">Java VTL</a> (SSB):
                     </div>
                     <ul>
                         <li>
                             Java VTL 1.1 engine
                         </li>
                         <li>
-                            Mainly about Transformation
+                            Focused mainly on transformation
                         </li>
                     </ul>
+                </section>
+                <section>
+                    <h2>
+                        Focus on Trevas (2)
+                    </h2>
                     <br />
-                    <br />
-                    <br />
-                    <div>
-                        Partly based on:
-                    </div>
                     <ul>
                         <li>
-                            <a href="https://www.antlr.org/">
-                                Antlr
-                            </a>
+                            Java VTL 2.0 (latest) engine
                         </li>
                         <li>
-                            <a href="https://spark.apache.org/">
-                                Spark
-                            </a>
+                            Focused mainly on validation
+                        </li>
+                        <li>
+                            Based on <a href="https://www.antlr.org/">Antlr</a> and <a href="https://spark.apache.org/">Apache Spark</a>
                         </li>
                     </ul>
                 </section>
@@ -187,6 +198,11 @@
                     <h1>
                         Use cases
                     </h1>
+                </section>
+                <section>
+                    <h2>
+                        Overview
+                    </h2>
                     <br />
                     <ul>
                         <li>
@@ -202,7 +218,7 @@
                 </section>
                 <section>
                     <h2>
-                        POC crabe:
+                        Crabe POC
                     </h2>
                     <br />
                     <ul>
@@ -225,19 +241,19 @@
                 <br />
                 <ul>
                     <li>
-                        Offer Eurostat editor as a standard tool for the ESS
+                        Eurostat should offer editor as a standard tool for the ESS
                     </li>
                     <li>
                         Create an ESS VTL users group
                     </li>
                     <li>
-                        Professionalize standardization process
+                        Improve standardization process (Version control, issues, reviews, etc.)
                     </li>
                     <li>
                         Optimize grammar
                     </li>
                     <li>
-                        Agree on test suite
+                        Agree on a test suite
                     </li>
                 </ul>
             </section>
