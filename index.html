@@ -3,13 +3,204 @@
 <head>
     <link rel="stylesheet" href="reveal.js/css/reveal.css">
     <link rel="stylesheet" href="reveal.js/css/theme/black.css">
+
+    <title>VTL - Insee</title>
 </head>
 
 <body>
     <div class="reveal">
         <div class="slides">
-            <section>Slide 1</section>
-            <section>Slide 2</section>
+            <section>
+                <h2>
+                    Expert Groups Shared Tools
+                </h2>
+                <br />
+                <h2>
+                    VTL-Insee
+                </h2>
+                <br />
+                <div>
+                    <p><i>Franck COTTON (franck.cotton@insee.fr)</i></p>
+                    <p><i>Nicolas LAVAL (nicolas.laval@insee.fr)</i></p>
+                    <p>
+                        <cite>
+                            <a href="https://nicolaval.github.io/VTL-Insee/index.html">Slides</a>
+                        </cite>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <section>
+                    <h1>
+                        Context
+                    </h1>
+                </section>
+                <section>
+                    <h2>
+                        The last ten years Insee strategy:
+                    </h2>
+                    <br />
+                    <ul>
+                        <li>
+                            Align on international standards (even imperfect ones)
+                        </li>
+                        <li>
+                            Active metadata all along the statistical process
+                        </li>
+                        <li>
+                            Embrace open data and open source
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>
+                        Work in progress
+                    </h2>
+                    <br />
+                    <ul>
+                        <li>
+                            Complete overhaul of our survey data acquisition system
+                        </li>
+                        <li>
+                            Working recently on the dissemination phase
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>
+                        Why VTL?
+                    </h2>
+                    <br />
+                    <h4>
+                        After focusing on information models
+                    </h4>
+                    <br />
+                    <h4>
+                        Switching to process models and meta-information
+                    </h4>
+                </section>
+            </section>
+            <section>
+                <h2>
+                    Priorities (descending order)
+                </h2>
+                <br />
+                <ul>
+                    <li>
+                        Edit code
+                    </li>
+                    <li>
+                        Validation from simple to complex
+                    </li>
+                    <li>
+                        Transformations from simple to complex
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1>
+                    Guidelines
+                </h1>
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        Grammar-based
+                    </li>
+                    <li>
+                        Open-source
+                    </li>
+                    <li>
+                        Driven by use cases
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1>
+                    Overview on tools
+                </h1>
+                <br />
+                <br />
+                <ul>
+                    <li>
+                        <a href="https://github.com/InseeFr/VTL-Tools">
+                            VTL Tools
+                        </a>: JavaScript editor and engine
+                    </li>
+                    <li>
+                        <a href="https://github.com/InseeFr/Trevas">
+                            Trevas
+                        </a>: Java engine
+                    </li>
+                    <li>
+                        <a href="https://github.com/romaintailhurat/darkr">
+                            Darkr
+                        </a>: R package around Trevas
+                    </li>
+                    <li>
+                        Utility tools (tree visualizer...)
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h1>
+                        Use cases
+                    </h1>
+                    <br />
+                    <ul>
+                        <li>
+                            Crabe: allocation of survey zones to field agents
+                        </li>
+                        <li>
+                            Data validation for households surveys
+                        </li>
+                        <li>
+                            Control of administrative data
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>
+                        POC crabe:
+                    </h2>
+                    <br />
+                    <ul>
+                        <li>
+                            Reusing Eurostat editor in React app
+                        </li>
+                        <li>
+                            Calling Trevas engine in Java API
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <img data-src="img/crabe.png" alt="poc-crabe" />
+                </section>
+            </section>
+            <section>
+                <h1>
+                    Our thoughts
+                </h1>
+                <br />
+                <ul>
+                    <li>
+                        Offer Eurostat editor as a standard tool for the ESS
+                    </li>
+                    <li>
+                        Create an ESS VTL users group
+                    </li>
+                    <li>
+                        Professionalize standardization process
+                    </li>
+                    <li>
+                        Optimize grammar
+                    </li>
+                    <li>
+                        Agree on test suite
+                    </li>
+                </ul>
+            </section>
         </div>
     </div>
     <script src="reveal.js/js/reveal.js"></script>
